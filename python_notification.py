@@ -56,7 +56,7 @@ while True:
                 if response.json()['success']==1:
                     print("send success")
                     db.collection(u'Notification').document(doc_id).delete()
-    time.sleep(2.0 - ((time.time() - starttime) % 1.0))
+    time.sleep(1.0 )
 
 
 
